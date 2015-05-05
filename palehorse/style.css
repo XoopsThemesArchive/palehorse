@@ -1,0 +1,319 @@
+html {
+scrollbar-3dlight-color:#d1d7dc;
+scrollbar-arrow-color:#006699;
+scrollbar-darkshadow-color:#026184;
+scrollbar-face-color:#E2E2E2;
+scrollbar-highlight-color:#ffffff;
+scrollbar-shadow-color:#E2E2E2;
+scrollbar-track-color:#FFFFFF;
+}
+body{
+background:#FFFFFF;
+color:#111111;
+font:11px Tahoma,Arial,Helvetica,sans-serif;margin:6px;
+padding:0;
+}
+td.banner{
+text-align: center;		
+background-image: url('imagens/tile.png');
+height: 59px; 
+}
+td.topnav{
+text-align: center;
+vertical-align: middle;	
+background-image: url('imagens/hbar.png');
+background-repeat:repeat-x; 
+repeat-x;color:#dd6900;
+white-space:nowrap;
+height:25px
+}
+a:link, a:active, a:visited { 
+font-family: Tahoma, Arial, Helvetica, sans-serif; 
+font-size: 11px; 
+text-decoration: none; 
+color: #000000; 
+font-style: norma
+}
+a:hover { 
+text-decoration: none; 
+font-family: Tahoma, Arial, Helvetica, sans-serif; 
+font-size: 11px; 
+text-decoration: none;
+color: #999999; 
+font-style: normal
+}
+.outline{
+background: #FFFFFF;
+border: solid 1px #000000;
+}
+table { 
+width: 100%; 
+margin: 5; 
+padding: 5;
+font-size: small
+}
+table td { 
+padding: 0px; 
+border-width: 0; 
+vertical-align: top; 
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+td { 
+font-family: Tahoma, Arial, Helvetica, sans-serif; 
+color: #000000; 
+font-size: 11px;
+border-top-width : 1px; 
+background: #fffff;
+border-right-width : 1px; 
+border-bottom-width : 1px; 
+border-left-width : 1px;	
+}
+td.header {	
+text-align: center;
+vertical-align: middle;
+background-image: url('imagens/tile.png');
+}
+input { 
+color : #555555;
+font-size: 11px; font-family: Tahoma, Arial, Helvetica, sans-serif; 
+}
+textarea {
+color : #555555;	
+font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+border: solid 1px #000000;
+}
+select {
+color : #000000;
+font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+border-color : #000000; 
+} 
+img { 
+border: 0px none;
+}
+ul { 
+margin: 2px; 
+padding: 2px; 
+list-style: decimal inside; 
+text-align: left;
+}
+li { 
+margin-left: 2px; 
+list-style: disc inside;
+}
+.odd { 
+background-color: #CCCCCC;
+text-align: left;
+}
+.outer { 
+background-color: #CCCCCC;
+text-align:left;
+border: 2px double #FFFFFF;			
+}
+.even { 
+background-color: #F9F9F9;
+}
+th { 
+background-color: #E2E2E2; 
+text-align: left; 
+padding: 5px;
+}
+.head { 
+color: #555555; 
+font-size: 11px; 
+font-weight : bold; 
+height: 25px;
+background-color: #E2E2E2;
+vertical-align: middle;
+}
+.foot { 
+background-color: #E2E2E2; 
+padding: 3px;
+}
+.comTitle {
+color: #000000; 
+font-size: 11px; 
+font-weight : bold;
+background: #d1d7dc;
+height: 23px;
+text-align: left;
+padding-top: 7px;
+padding-left: 10px;	
+}
+.comText {
+padding: 20px;
+text-align: left; 		
+}
+.comUserStat {
+font-size: 10px; 
+color: #555555; 
+font-weight:bold; 
+border: 1px solid #FFFFFF; 
+background-color: #efefef; 
+margin: 2px; padding: 2px;
+}
+.comUserStatCaption {
+font-weight: normal;
+}
+.comUserStatus {
+margin-left: 2px; 
+margin-top: 10px; 
+color: #006699; 
+font-weight:bold; 
+font-size: 10px;
+}
+.comUserRank {
+margin: 2px;
+}
+.comUserRankText {
+font-size: 10px;
+font-weight:bold;
+}
+.comUserRankImg {
+border: 0px none;
+}
+.comUserName {}
+.comUserImg {
+margin: 2px;
+}
+.comDate {
+color: #00396a;
+font-weight: normal; 
+font-style: italic;	 
+font-size: smaller;
+text-align: right;	
+}
+.comDateCaption {
+color: #00396a;
+font-weight: bold; 
+font-style: normal;
+text-align: right;	
+}
+div.xoopsCode { 
+background: #CCCCCC ; 
+border: 1px solid #d1d7dc;
+color:#444444;	 
+font: normal 11px Tahoma, Arial, Helvetica, sans-serif; 
+padding: 0px 6px 6px 6px;
+}
+div.xoopsQuote { 
+background: #CCCCCC; 
+border: 1px solid #d1d7dc;
+color:#444444;	 
+font: normal 11px Tahoma, Arial, Helvetica, sans-serif; 
+padding: 0px 6px 6px 6px;
+}
+.item {
+background: #FFFFFF;
+}
+.itemHead {
+color: #555555; 
+font-size: 11px; 
+font-weight : bold;
+background-image: url('imagens/tile_back_small.png');
+height: 18px;
+padding-top: 7px;
+padding-left: 7px;
+border-left: 3px double #000000;
+border-right:3px double #000000;
+border-top:3px double #000000;
+border-bottom:1px solid #000000;		
+}
+.itemInfo {
+text-align: right; 
+padding: 3px; 
+background-color: #E2E2E2;
+border-left: double 3px #000000;
+border-right:double 3px #000000;
+}
+.itemTitle a {
+font-size: 100%; 
+font-size: 11px;	
+font-weight: bold; 
+font-variant: small-caps; 
+color: #FFFFFF; 
+background-color: transparent;
+}
+.itemPoster {
+color: #555555;
+font-size: 90%; 
+font-style: normal;
+}
+.itemPostDate {
+font-size: 90%; 
+font-style: normal;
+}
+.itemStats {
+color: #555555;
+font-size: 90%; 
+font-style: normal;
+}
+.itemBody {
+color: #555555;
+padding-left: 5px; 
+text-align: left;
+border-left: double 3px #000000;
+border-right: double 3px #000000;
+border-top: solid 1px #000000;	
+border-bottom: solid 1px #000000;			
+}
+.itemText {
+color: #555555;
+margin-top: 5px; 
+margin-bottom: 5px; 
+line-height: 1.5em;
+}
+.itemFoot {
+text-align: right; 
+padding: 3px; 
+background-color: #E2E2E2;
+border-left: double 3px #000000;
+border-right:double 3px #000000;
+border-bottom:double 3px #000000;		
+}
+.itemAdminLink {
+font-size: 90%;
+}
+.itemPermaLink {
+font-size: 90%;
+}
+.blockTitle {
+color: #FFFFFF;
+font-size: 11px;
+font-weight: bold;
+text-align: center;
+background-image: url('imagens/tile_back_small.png');	
+border: 1px solid #98aab1; 
+height: 22px;
+vertical-align: middle	
+}
+.blockTitle2 {
+color: #FFFFFF;
+font-weight: bold;
+font-size: 11px;
+text-align: center;	
+background-image: url('imagens/tile_back_small.png');
+border: 1px solid #98aab1; 
+height: 22px;
+vertical-align: middle	
+}
+.blockTitle3 {
+color: #555555;
+font-weight: bold;
+font-size: 10px;
+text-align: center;	
+background-color: #E2E2E2;
+border: 1px solid #98aab1; 
+height: 20px;
+vertical-align: middle	
+}
+.blockContent {
+background-color: #FFFFFF; 
+padding: 2px;
+border-left: solid 1px #000000;
+border-right:solid 1px #000000;
+border-bottom:solid 1px #000000;
+line-height:133%;
+}
+.pointer {
+cursor: hand;
+}

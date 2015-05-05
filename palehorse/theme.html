@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="PaleRider" />
+<meta name="copyright" content="http://www.wastelands-bbs.com" />
+<meta name="generator" content="$Id: index.html,v 1.6 2004/10/29 19:52:37 mikhail Exp $ - XOOPS BRASIL - Licence: GNU" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- Original Theme By http://petitoops.net/ - Modified As PaleHorse Theme By "PaleRider @ http://www.wastelands-bbs.com -->
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<script type="text/javascript">
+<!--
+var getById = (typeof document.getElementById != "undefined");
+function toggleDisplay(obj,display1,display2){
+if(!getById) return;
+obj = getRef(obj);
+if(obj.style.display == display2)
+obj.style.display = display1;
+else
+obj.style.display = display2;
+repaintFix();
+}
+function getRef(obj){
+if(getById)
+return(typeof obj == "string") ? document.getElementById(obj) : obj;
+}
+function repaintFix(obj){ 
+if("undefined" == typeof document.body
+|| "undefined" == typeof document.body.style) return;
+if(obj == null)
+obj == document.body;
+else obj = getRef(obj);
+document.body.style.visibility = "hidden";
+document.body.style.visibility = "visible";
+}
+//-->
+</script>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="bg">
+<tr><td>
+<table cellspacing="0" cellpadding="0" class="bg1" border="0" >
+<tr><td class="header" width=249 hight=59>
+<img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/logo.png"></a>
+</td>
+<td class="banner"><{$xoops_banner}></td>
+</tr></table><br>
+</td>
+</tr>
+<tr>
+<td>
+<!-- Start Headerbar -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td width="10">
+<img src="<{$xoops_imageurl}>imagens/hbar_left.png" width="10" height="25" alt="" />
+</td>
+<td>
+<img src="<{$xoops_imageurl}>imagens/swich.png" width="25" height="25" alt="to open and close left blocks" class="pointer" onclick="toggleDisplay('left','block','none')" />
+</td>
+<td width="100%" class="topnav">
+<!-- navigation bar set -->
+<a href="<{$xoops_url}>/modules/smartfaq/index.php?cat_id=1">Tweaks & Tips</a>
+&nbsp;&bull;&nbsp;
+<a href="<{$xoops_url}>/modules/news/">Articles</a>
+&nbsp;&bull;&nbsp;
+<a href="<{$xoops_url}>/modules/ipboard/">Forums</a>
+&nbsp;&bull;&nbsp;
+<a href="<{$xoops_url}>/modules/xoopsgallery/">Gallery</a>
+&nbsp;&bull;&nbsp;
+<a href="<{$xoops_url}>/search.php">Search</a>
+&nbsp;&bull;&nbsp;
+<a href="<{$xoops_url}>/modules/wfdownloads/">Downloads</a>
+</td>
+<td>
+<{if $xoops_showrblock == 1}>
+<img src="<{$xoops_imageurl}>imagens/swich.png" width="25" height="25" alt="block control" class="pointer" onclick="toggleDisplay('right','block','none')" />
+<{/if}>
+<{if $xoops_showrblock == 0}>
+<img src="<{$xoops_imageurl}>imagens/swi_off.png" width="25" height="25" alt="to open and close right blocks" alt="block control" />
+<{/if}>
+</td>
+<td width="10">
+<img src="<{$xoops_imageurl}>imagens/hbar_right.png" width="10" height="25" alt="" />
+</td>
+</tr>
+</table>
+<!-- End Headerbar -->
+</td></tr>
+<tr><td><br>
+<table cellspacing="2" cellpadding="2"><tr><td id="left" width=170>
+<!-- Start left blocks loop -->
+<{foreach item=block from=$xoops_lblocks}>
+<table class="outline"><tr><td>
+<table cellspacing="0" cellpadding="2">
+<tr><td class="blockTitle2">&nbsp;<{$block.title}></td></tr>
+<tr><td class="blockContent"><{$block.content}>
+</td></tr></table>
+</td></tr></table><br>
+<{/foreach}>
+<!-- Fim do "loop" dos blocos da esquerda -->
+</td>
+<td style="padding: 0px 5px 0px;">
+<!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+<table cellspacing="0">
+<tr><td width="100%" colspan="2">
+<!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}>
+<table class="outline"><tr><td>
+<table cellspacing="1" cellpadding="5">
+<tr><td class="blockTitle">&nbsp;<{$block.title}></td></tr>
+<tr><td class="blockContent"><{$block.content}></td></tr></table>
+</td></tr></table><br />
+<{/foreach}>
+<!-- End center-center blocks loop -->
+</td></tr>
+<tr><td width="50%">
+<!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}>
+<table class="outline"><tr><td>
+<table cellspacing="1" cellpadding="5">
+<tr> <td class="blockTitle">&nbsp;<{$block.title}></td></tr>
+<tr><td class="blockContent"><{$block.content}></td></tr></table>
+</td></tr></table><br />
+<{/foreach}>
+<!-- End center-left blocks loop -->
+</td><td width="50%">
+<!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}>
+<table class="outline"><tr><td>
+<table cellspacing="1" cellpadding="5">
+<tr> <td class="blockTitle">&nbsp;<{$block.title}></td></tr>
+<tr><td class="blockContent"><{$block.content}></td></tr></table>
+</td></tr></table><br />
+<{/foreach}>
+<!-- End center-right blocks loop -->
+</td></tr></table>
+<{/if}>
+<!-- End display center blocks -->
+<div id="content"><{$xoops_contents}></div></td>
+<{if $xoops_showrblock == 1}>
+<td id="right" width=170 align=center>
+<!-- Início dos blocos da direita -->
+<{foreach item=block from=$xoops_rblocks}>
+<table class="outline"><tr><td id="right">
+<table cellspacing="0" cellpadding="2">
+<tr><td class="blockTitle2">&nbsp;<{$block.title}></td></tr>
+<tr><td class="blockContent"><{$block.content}></td></tr></table>
+</td></tr></table><br>
+<{/foreach}>
+<!-- End right blocks loop -->
+<{/if}></td></tr></table>
+</td></tr>
+</table>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td class="blockTitle3 height="30" valign="middle" align="center">
+<div style="text-align: center; padding-top: 2px; font-size: 10px"><{$xoops_footer}><br>
+Pale Horse Theme By: <a href="http://www.wastelands-bbs.com/"> Pale Rider</a></div>
+</td></tr>
+</table>
+</body>
+</html>
